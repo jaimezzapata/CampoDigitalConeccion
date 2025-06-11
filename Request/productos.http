@@ -9,8 +9,33 @@ POST {{API}}
 Content-Type: application/json
 
 {
-  "Producto": "Pico",
+  "Producto": "Tenedor",
   "Descripcion": "Herramienta para cavar",
   "UnidadMedida": "Unidad",
   "IdCategoria": 2
 }
+
+### Obtener solo un producto
+
+GET {{API}}/10
+
+
+### DELETE PRODUCT
+
+ DELETE {{API}}/24
+
+
+
+ ### UPDATE PRODUCTOS
+    PUT {{API}}/10
+    Content-Type: application/json
+
+    {
+    "Producto": "Semilla Cebolla Premium",
+    "Descripcion": "Cebolla blanca de siembra",
+    "UnidadMedida": "g",
+    "IdCategoria": 1
+    }
+
+
+
