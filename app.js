@@ -1,10 +1,9 @@
 import express from 'express';
 import config from './config.js';
 import productRoutes from './src/routes/products.routes.js';
+import usuarioRoutes from './src/routes/usuarios.routes.js';
 
 const app = express();
-
-
 
 // Configuración del puerto
 app.set('port', config.port);
@@ -13,10 +12,9 @@ app.set('port', config.port);
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-// Usar rutas
-app.use(productRoutes); // Ajusta la ruta base según lo necesites
+// Rutas con prefijo (buenas prácticas)
+app.use(productRoutes);
+app.use(usuarioRoutes);
 
 // Exportar la app
 export default app;
-
-

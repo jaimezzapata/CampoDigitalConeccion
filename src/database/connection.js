@@ -5,7 +5,7 @@ const dbSettings = {
   user: "sa",
   password: "1020485975",
   server: "Santiago",
-  database: "CampoDigitalBD_V2",
+  database: "CampoDigitalBD",
   options: {
     encrypt: true,
     trustServerCertificate: true, // Permite aceptar certificados autofirmados

@@ -1,5 +1,6 @@
 // realizae peticiones dentro de visual studio
 @API= http://localhost:3000/products
+@API2 = http://localhost:3000/usuarios
 
 GET {{API}}
 
@@ -37,5 +38,46 @@ GET {{API}}/10
     "IdCategoria": 1
     }
 
+### Obtener todos los usuarios
+GET {{API2}}
+
+
+### Obtener un solo usuario
+GET {{API2}}/5
+
+### CREAR
+POST {{API2}}
+Content-Type: application/json
+
+{
+  "IdTipoCliente": 1,
+  "NombreCompleto": "Juan David Martínez",
+  "Telefono": "+573001112233",
+  "IdTipoDocumento": 1,
+  "NumeroDocumento": 1032456789,
+  "Email": "juan.martinez@example.com",
+  "FechaNacimiento": "1990-05-12T00:00:00",
+  "FechaRegistro": "2025-06-10T21:57:31",
+  "Contrasena": "MiContraseñaSegura123"
+}
+
+### Eliminar cliente con ID 20
+DELETE {{API2}}/19
+
+### ACTUALIZAR CLIENTE 
+PUT {{API2}}/10
+Content-Type: application/json
+
+{
+  "IdTipoCliente": 2,
+  "NombreCompleto": "Camila Gómez Rojas",
+  "Telefono": "+573144556677",
+  "IdTipoDocumento": 2,
+  "NumeroDocumento": 987654321,
+  "Email": "camila.gomez@proveedor.com",
+  "FechaNacimiento": "1995-07-18T00:00:00",
+  "FechaRegistro": "2025-06-10T22:30:00",
+  "Contrasena": "Camila2025*!"
+}
 
 
