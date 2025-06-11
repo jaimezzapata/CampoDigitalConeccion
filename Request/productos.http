@@ -1,0 +1,16 @@
+// realizae peticiones dentro de visual studio
+@API= http://localhost:3000/products
+
+GET {{API}}
+
+
+### Crear producto
+POST {{API}}
+Content-Type: application/json
+
+{
+  "Producto": "Pico",
+  "Descripcion": "Herramienta para cavar",
+  "UnidadMedida": "Unidad",
+  "IdCategoria": 2
+}
