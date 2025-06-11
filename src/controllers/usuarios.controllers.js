@@ -44,7 +44,7 @@ export const createUsuario = async (req, res) => {
     await pool.request()
       .input('IdTipoCliente', sql.Int, IdTipoCliente)
       .input('NombreCompleto', sql.NVarChar, NombreCompleto)
-      .input('Telefono', sql.VarChar, Telefono) // <- CAMBIO
+      .input('Telefono', sql.VarChar, Telefono)
       .input('IdTipoDocumento', sql.Int, IdTipoDocumento)
       .input('NumeroDocumento', sql.Int, NumeroDocumento)
       .input('Email', sql.NVarChar, Email)
