@@ -1,0 +1,82 @@
+body{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Sulphur Point', sans-serif;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: #202426;
+
+}
+
+header{
+    height: 150px;
+    width: 100%;
+    background-color: #202426;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.boton{
+    border-radius: 20%;
+    border: none;
+    background-color: #202426;
+}
+
+.boton i{
+    font-size: 3rem;
+    color: #9da65d;
+}
+
+.titlecont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.title{
+    color: white;
+    position: center;
+}
+
+.containerboton{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.cuerpo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+h1 { font-family: 'Sulphur Point', sans-serif; color: #f2f2f2; }
+
+h2, h3, p { font-family: 'Montserrat', sans-serif; }
+
+header{
+    display: flex;
+    justify-content: center;
+}
+main{
+    width: 80%;
+}
+
+.titlebox{
+    color: white;
+}
+
+.subtitle{
+    color: #9da65d;
+}
+
+.parrafo{
+    color: white;
+}

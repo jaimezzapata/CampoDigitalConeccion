@@ -1,0 +1,111 @@
+
+<section class="conteo-actulizacion"> 
+<div class="conteo-actulizacion-grid">
+    <div class="conteo-actulizacion-part1">
+        <div class="conteo-regresivo">
+            <h2 class="conteo-regresivo-grid-h2">Próximamente</h2>
+            <div class="conteo-container">
+                <div class="conteo-item">
+                    <div class="etiqueta">Días</div>
+                    <span id="dias">0</span>
+                </div>
+                <div class="conteo-item">
+                    <div class="etiqueta">Horas</div>
+                    <span id="horas">0</span>
+                </div>
+                <div class="conteo-item">
+                    <div class="etiqueta">Minutos</div>
+                    <span id="minutos">0</span>
+                </div>
+                <div class="conteo-item">
+                    <div class="etiqueta">Segundos</div>
+                    <span id="segundos">0</span>
+                </div>
+            </div>
+            <script src="script.js"></script>
+        </div>
+        <p class="notificaciones-conteo-regresivo">Recibe las últimas actualizaciones.</p>
+        <div class="input-group flex-nowrap">
+            <input type="text" class="form-control" placeholder="Ingrese su correo aquí" aria-label="Username" aria-describedby="addon-wrapping">
+            <button class="boton-suscribirse">Suscribirse</button>
+        </div>
+    </div>
+    
+    
+    <div class="imagen-conteo-regresivo"><img src="imagen-conteo-regresivo.jpg" alt="imagen"></div>
+
+</div>
+</section>
+
+
+
+
+.conteo-actualizacion-grid{
+    color: #F2F2F2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+
+ } 
+
+.conteo-regresivo-grid-h2{
+    color: #F2F2F2;
+    font-size: 35px;
+    font-family: 'Sulphur Point', sans-serif;
+}
+
+.conteo-container {
+    display: flex;
+    gap: 20px;
+}
+
+.conteo-item {
+    text-align: center  ;
+}
+
+.conteo-item span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #F2F2F2;
+    font-family: 'Sulphur Point', sans-serif;
+}
+
+.etiqueta {
+    font-size: 1rem;
+    color: #f2f2f2;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+}
+
+.notificaciones-conteo-regresivo{
+    color: #F2F2F2;
+    margin-top: 150px;
+}
+
+.form-control{
+    font-family: 'Sulphur Point', sans-serif;
+    height: 40px;
+    width: 500px;
+    margin: 0px;  
+    border-radius: 0px;
+    border: 0px;
+    padding: 0px;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.boton-suscribirse{
+    background-color: #9DA65D;
+    color: #F2F2F2;
+}
+
+.conteo-actulizacion-part1{
+    background-color: #484b4d;
+    padding-top: 30px;
+    padding-bottom: 90px;
+    padding-left: 60px;
+    width: 1fr;
+}

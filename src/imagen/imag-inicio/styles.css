@@ -1,0 +1,552 @@
+body {
+    background-color: #202426;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease; 
+    font-family: 'Sulphur Point', sans-serif;
+    height: 40px;
+    width: 120px;
+}
+
+button:hover {
+    background-color:  #5C6333;
+    color: #F2F2F2;
+}
+
+.barra-incio {
+    display: flex;
+    align-items: center;
+    background-color: #202426;
+    padding: 0 20px;
+    height: 100px;
+}
+
+.botones-inicio {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    padding-right: 150px;
+    gap: 25px;
+}
+
+.favoritos-logo{
+    height: 25px;
+}
+
+.carro-compras-logo{
+    height: 25px;
+}
+
+.boton-inicio {
+    background-color: #9DA65D;
+}
+
+.logo {
+    height: 80px;
+    margin-right: 20px;
+}
+  
+nav a {
+    color: #F2F2F2;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Sulphur Point', sans-serif;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+main {
+    text-align: center;
+    padding: 50px;
+    color: #F2F2F2;
+    font-family: 'Sulphur Point', sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(marketing-digital-agro.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    min-height: 20px;
+    padding: 20px; 
+    margin: 0px;
+}
+
+.titulo-inicial {
+    font-size: 50px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.lee-mas {
+    background-color: #9DA65D;
+    color: #F2F2F2;
+    height: 40px;
+    width: 120px;
+}
+
+.compra {
+    background-color: #F2F2F2;    
+    color: #202426;
+    height: 40px;
+    width: 150px;
+}
+
+.contenedor2 {
+    background-color: #484b4d;
+    color: #F2F2F2;
+    height: 200px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative; 
+}
+
+.titulo2 {
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 40px;
+    margin-bottom: 0px;
+    margin-left: 250px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.explorar-mas {
+    position: absolute;
+    background-color: #9DA65D;
+    color: #F2F2F2;
+    height: 40px;
+    width: 150px;
+    align-self: flex-end;
+    margin-right: 250px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.introc2 {
+    margin-left: 250px;
+    margin-top: 0px;
+    bottom: 50%;
+    transform: translateY(-50%);
+}
+
+.articulos-destacados {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.titulo3 {
+    font-size: 25px;
+    color: #9DA65D;
+    font-family: 'Sulphur Point', sans-serif;
+    margin-bottom: 10px;
+}
+
+.introc3 {
+    font-size: 50px;
+    color: #F2F2F2;
+    font-family: 'Sulphur Point', sans-serif;
+    margin-top: 0px;
+}
+
+
+.imagenes-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    transition: background-color 0.2s ease; 
+    width: 100%;
+    background-color: #484b4d;
+}
+
+.herramientas-prod-destac,
+.proteccion-prod-destac,
+.fertilizante-prod-destac,
+.semillas-art-destac {
+    height: auto; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.herramientas-prod-destac {
+    height: 450px;
+    background-image: url(herramientas-prod-destac.jpg);
+    margin-bottom: 30px;
+    margin-right: 30px;
+    display: flex;
+}
+
+.proteccion-prod-destac {
+    height: 450px;
+    background-image: url(proteccion-prod-destac.jpg);
+    margin-bottom: 30px;
+    margin-right: 30px;
+    display: flex;
+}
+
+
+.fertilizante-prod-destac{
+    background-image: url(fertilizante-prod-destac.jpg);
+    height: 450px;
+    object-fit: cover;
+    grid-column: span 2;  
+    margin-right: 30px;
+    display: flex;
+}
+
+.semillas-art-destac{
+    height: 930px;
+    background-image: url(semillas-art-destac.jpeg);
+    grid-row: span 2; 
+    object-fit: cover;
+    display: flex;
+}
+
+.ver-mas1{
+    display: grid;
+    place-items: center;
+    height: 100%;
+}
+.ver-mas {
+    background-color: #9DA65D;
+    color: #F2F2F2;
+    height: 40px;
+    width: 120px;
+}
+
+.acerca-productos{
+    background-color: #484b4d;
+}    
+
+.acerca-productos-grid-h2 {
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 35px;
+}
+
+.acerca-productos-grid-p{
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 1.6;
+}
+
+.acerca-productos-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 30px;
+    transition: background-color 0.2s ease;
+    height: 800px;
+    color: #F2F2F2;
+}
+
+.acerca-productos-equipos,
+.acerca-productos-fertilizantes,
+.acerca-productos-suministros {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.acerca-productos-equipos {
+    grid-row: span 2;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(equipos-acerca-prod.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.acerca-productos-fertilizantes{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(fertilizantes-acerca-prod.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.acerca-productos-suministros{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(suministros-acerca-prod.jpg);    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.acerca-productos-grid-boton {
+    background-color: #9DA65D;
+    color: #F2F2F2;
+}
+
+.contenedor5 {
+    background-color: #5C6333;
+    color: #F2F2F2;
+    height: 150px;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.titulo5 {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.logo {
+    height: 40px;
+}
+
+.recien-agregados-titulo{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #484b4d;
+}
+
+.titulo6{
+    background-color: #484b4d;
+}
+
+.titulo6-h2{
+    font-family: 'Sulphur Point', sans-serif;
+    color: #F2F2F2;
+    font-size: 50px;
+    margin-top: 0px;
+}
+
+.titulo6-p {
+    color: #9DA65D;    
+    font-family: 'Sulphur Point', sans-serif;
+    margin-bottom: 10px;
+    font-size: 25px;
+    margin-top: 45px;
+}
+
+.recien-agregados-imagenes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 30px;
+    transition: background-color 0.2s ease;
+    background-color: #484b4d;
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-bottom: 50px;
+}
+
+.prod1-recien-agregados {
+    grid-row: span 2;
+    grid-column: span 2;
+    height: 630px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(prod1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.prod2-recien-agregados {
+    height: 300px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(prod2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.prod3-recien-agregados {
+    height: 300px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(prod3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.prod4-recien-agregados {
+    height: 300px;
+    grid-column: span 2;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(prod4.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.recien-agregados-boton1{
+    background-color: #484b4d;
+    display: grid;
+    place-items: center;
+    height: 100%;
+}
+
+.recien-agregados-boton{
+    background-color: #9DA65D;
+    color: #F2F2F2;
+    margin: 25px;
+}
+
+.nuestros-clientes{
+    color: #F2F2F2;
+    height: 400px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nuestros-clientes-h2{
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 50px;
+    top: 50%;
+}
+ .nuestros-clientes-p{
+    padding-left: 300px;
+    padding-right: 300px;
+    line-height: 2;
+ }
+
+.conteo-actualizacion-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    transition: background-color 0.2s ease;
+    background-color: #484b4d;
+    height: 480px;
+}
+
+.imagen-conteo-regresivo{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(imagen-conteo-regresivo.jpg);
+    height: 480px;
+}
+
+.conteo-actualizacion-part1{
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-bottom: 55px;
+}
+
+.conteo-regresivo-grid-h2{
+    color: #F2F2F2;
+    font-size: 35px;
+    font-family: 'Sulphur Point', sans-serif;
+}
+
+.conteo-container {
+    display: flex;
+    gap: 20px;
+}
+
+.conteo-item {
+    text-align: center  ;
+}
+
+.conteo-item span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #F2F2F2;
+    font-family: 'Sulphur Point', sans-serif;
+}
+
+.etiqueta {
+    font-size: 1rem;
+    color: #f2f2f2;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+}
+
+.notificaciones-conteo-regresivo{
+    color: #F2F2F2;
+    margin-top: 150px;
+}
+
+.form-control{
+    font-family: 'Sulphur Point', sans-serif;
+    height: 40px;
+    width: 500px;
+    margin: 0px;  
+    border-radius: 0px;
+    border: 0px;
+    padding: 0px;
+    font-size: 14px;
+}
+
+.boton-suscribirse{
+    background-color: #9DA65D;
+    color: #F2F2F2;
+}
+
+.parte-final {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-final {
+    height: 50px;
+}
+
+.encabezado{
+    background-color: #484b4d;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barrabusqueda{
+    font-family: 'Sulphur Point', sans-serif;
+    height: 20px;
+    width: 500px;
+    font-size: 14px;
+    background-color: #484b4d;
+}
+
+.botonbusqueda {
+    height: 18px;
+    width: 60px;
+    background-color: #9DA65D; 
+    border-radius: 5px; 
+}
+
+  
+
+  
+
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+

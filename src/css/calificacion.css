@@ -1,0 +1,124 @@
+body{
+  background-color: #f2efdf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.wraper {
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+  align-items: center; 
+  background-color: #465902;
+  padding: 2rem;
+  width: 576px;
+  width: 100%;
+  border-radius: .75rem;
+  box-shadow: var(--shadow);
+}
+
+.wraper h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.rating {
+margin: 50px auto;
+width: 250px;
+}
+.rating >*{
+  float: right;
+}
+
+.rating label {
+  height: 20px;
+  width: 20%;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.rating label::after {
+  transition: all 1s ease-out;
+  -webkit-font-smoothing:antialiased;
+  position: absolute;
+  content: "★";
+  color: #444;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 50px;
+  -webkit-animation: 1s pulse ease;
+  animation: 1s pulse ease;
+}
+
+.rating label:hover::after {
+color: #5e5e5e;
+text-shadow: 0 0 15px #5e5e5e;
+}
+.rating input{
+  display: none;
+}
+.rating input:checked + label::after,
+.rating input:checked ~ label::after{
+  content: "★";
+  color: #f9bf3b;
+  text-shadow: 0 0 20px #f9bf3b;
+
+
+}
+
+
+textarea{
+  width: 100%;
+  background: var(--light);
+  padding: 1rem;
+  border-radius: .5rem;
+  border: none;
+  margin-bottom: .5rem;
+}
+
+.btn-group{
+  display: flex;
+  grid-gap: .5rem;
+  align-items: center;
+}
+
+.btn-group .btn{
+  align-items: center;
+  padding: .75rem 1rem;
+  border-radius: .5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: .875rem;
+  font-weight: 500;
+}
+.btn-group .btn.submit{
+background: var(--blue);
+color: var(white);
+}
+.btn-group .btn.submit{
+  background: var(--blue-d-1);
+}
+.btn-group .btn.cancel {
+  background: var(white);
+  color: var(--blue)
+}
+.btn-group .btn.btn.cancel{
+  background: var(--light);
+}

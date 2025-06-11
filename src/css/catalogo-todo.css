@@ -1,0 +1,223 @@
+body{
+    background-color: #202426;
+    color: #f2f2f2;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease; 
+    font-family: 'Sulphur Point', sans-serif;
+    height: 40px;
+    width: 120px;
+    font-size: 11px;
+}
+
+button:hover {
+    background-color:  #5C6333;
+    color: #F2F2F2;
+}
+
+.barra-incio {
+    display: flex;
+    align-items: center;
+    background-color: #202426;
+    padding: 0 20px;
+    height: 110px;
+    position: fixed;
+    z-index: 1000; 
+    width: 100%;
+}
+
+.botones-inicio {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    padding-right: 45px;
+    gap: 25px;
+}
+
+.favoritos-logo{
+    height: 25px;
+}
+
+.carro-compras-logo{
+    height: 25px;
+}
+
+.boton-inicio {
+    background-color: #9DA65D;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 20px;
+}
+  
+nav a {
+    color: #F2F2F2;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Sulphur Point', sans-serif;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+.encabezado{
+    background-color: #484b4d;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000; 
+    width: 100%;
+    margin-top: 110px;
+}
+
+.barrabusqueda{
+    font-family: 'Sulphur Point', sans-serif;
+    height: 35px;
+    width: 500px;
+    font-size: 14px;
+    border-radius: 5px; 
+}
+
+.botonbusqueda {
+    background-color: #484b4d;
+    margin: 0%;
+    width: 40px;
+    border-radius: 50px;
+}
+
+
+.contenedor {
+    display: grid;
+    place-items: center;
+    height: 150px;
+}
+    
+
+.contenido {
+    text-align: center
+}
+
+h1 {
+    font-family: 'Sulphur Point', sans-serif;
+    margin-top: 230px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.checkbox-label input[type="checkbox"] {
+    margin-right: 10px; 
+    cursor: pointer;
+}
+
+h6 {
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2;
+}
+
+h3 {
+    margin: 15px;
+    margin-left: 30px;
+    font-family: 'Sulphur Point', sans-serif;
+}
+
+.catalogo{
+    margin-left: 60px;
+}
+
+#categoria,
+#subcategoria,
+#subtipos {
+    margin-left: 60px;
+}
+
+.row{
+    display: flex;
+    flex-direction:row-reverse;
+    margin-right: 15px;
+    
+.card-black {
+background-color: #484b4d;
+color: white; 
+    }
+}
+
+.agg-boton {
+    gap: none;
+}
+
+.btn{
+    border-radius: 10px;
+    color: #f2f2f2;
+    cursor: pointer;
+    justify-content: center;
+    
+}
+
+.card-footer .btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+
+.btn:hover{
+background-color: #202426;
+color: #f2f2f2;
+}
+
+.card-img-top{
+    height: 100%;
+    
+}
+
+.card-title {
+    font-family: 'Sulphur Point', sans-serif;
+    color: #F2F2F2;
+    text-align: center;
+}
+
+.card-text{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #9da65d;
+}
+
+
+
+
+.parte-final {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-final {
+    height: 50px;
+}
+
+
+
+
+
