@@ -1,13 +1,12 @@
-// src/controllers/products.controller.js
 import { getConnection ,sql} from '../database/connection.js';
-import query from '../database/query.js' 
+import { getAllProductos } from '../database/query.js';
 
 export const getProductos = async (req, res) => {
   try {
-    const pool = await getConnection(); // llama la conexión la cual te retorna un pool, se hace la petición,
-    const result = await pool.request().query(query.getAllProductos); //esta esla consulta, el await se utiliza para aguardar ha que termine la consulta y que se guarte en la variable result 
-    console.log(result.recordset); // Muestra los productos en consola
-    res.json(result.recordset);    // Envía los productos como respuesta JSON hacia el navegador
+    const pool = await getConnection(); 
+    const result = await pool.request().query(getAllProductos); 
+    console.log(result.recordset); 
+    res.json(result.recordset);   
   } catch (error) {
     console.error("❌ Error al obtener productos:", error);
     res.status(500).json({ message: "Error al obtener productos" });
@@ -101,7 +100,6 @@ export const updateProducto = async (req, res) => {
   }
 };
 
-// Eliminar producto por ID
 export const deleteProductoById = async (req, res) => {
   const { id } = req.params;
 

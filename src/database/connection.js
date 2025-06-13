@@ -2,13 +2,13 @@
 import sql from 'mssql';
 
 const dbSettings = {
-  user: "sa",
-  password: "1020485975",
-  server: "Santiago",
-  database: "CampoDigitalBD",
+  user: "root",
+  password: "root",
+  server: "localhost",
+  database: "testdb",
   options: {
     encrypt: true,
-    trustServerCertificate: true, // Permite aceptar certificados autofirmados
+    trustServerCertificate: true,
   }
 };
 

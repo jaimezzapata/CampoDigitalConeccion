@@ -1,7 +1,5 @@
-// src/controllers/clientes.controller.js
 import { getConnection, sql } from '../database/connection.js';
 
-// Obtener todos los clientes
 export const getUsuarios = async (req, res) => {
   try {
     const pool = await getConnection();
@@ -13,7 +11,6 @@ export const getUsuarios = async (req, res) => {
   }
 };
 
-// Crear nuevo cliente
 export const createUsuario = async (req, res) => {
   try {
     const {
@@ -90,7 +87,6 @@ export const getUsuarioById = async (req, res) => {
   }
 };
 
-// Actualizar cliente por ID
 export const updateUsuario = async (req, res) => {
   const { id } = req.params;
   const {
@@ -139,7 +135,6 @@ export const updateUsuario = async (req, res) => {
   }
 };
 
-// Eliminar cliente por ID
 export const deleteUsuarioById = async (req, res) => {
   const { id } = req.params;
 

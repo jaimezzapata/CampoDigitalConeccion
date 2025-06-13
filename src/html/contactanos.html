@@ -59,20 +59,55 @@
                 </p>
             </div>
             <div class="formcamp">
-                <form action=""></form>
-                <label for="nombre">Nombre</label>
-                <input class="space" type="text" id="nombre" name="nombre"><br>
-                <label for="correo">Correo eletrónico</label>
-                <input class="space" type="email" id="correo" name="correo"><br>
-                <label for="contraseña">Contraseña</label>
-                <input class="space" type="password" id="contraseña" name="contraseña"><br>
-                <h3>Describe brevemente tu situacion</h3>
-                <textarea class="space t" name="mensaje" id="mensaje"></textarea><br>
-                <div><a href="">Olvidé mi contraseña</a></div>
+                <form id="contactoForm">
+                    <label for="nombre">Nombre</label>
+                    <input class="space" type="text" id="nombre" name="nombre" required><br>
+                    <label for="correo">Correo eletrónico</label>
+                    <input class="space" type="email" id="correo" name="correo" required><br>
+                    <label for="contraseña">Contraseña</label>
+                    <input class="space" type="password" id="contraseña" name="contraseña" required><br>
+                    <h3>Describe brevemente tu situacion</h3>
+                    <textarea class="space t" name="mensaje" id="mensaje" required></textarea><br>
+                    <div><a href="">Olvidé mi contraseña</a></div>
+                    <label for="db">Base de datos:</label>
+                    <select id="db" name="db">
+                        <option value="mysql">MySQL</option>
+                        <option value="mssql">SQL Server</option>
+                    </select>
+                    <div class="botonspace">
+                        <button class="boton" type="submit">Enviar</button>
+                    </div>
+                </form>
             </div>
-            <div class="botonspace">
-                <button class="boton" type="submit">Enviar</button>
-            </div>
+            <script>
+            document.getElementById('contactoForm').addEventListener('submit', async function(e) {
+                e.preventDefault();
+                const data = {
+                    nombre: document.getElementById('nombre').value,
+                    correo: document.getElementById('correo').value,
+                    contrasena: document.getElementById('contraseña').value,
+                    mensaje: document.getElementById('mensaje').value,
+                    db: document.getElementById('db').value
+                };
+                try {
+                    const res = await fetch('/api/contacto', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(data)
+                    });
+                    let result;
+                    const contentType = res.headers.get('content-type');
+                    if (contentType && contentType.includes('application/json')) {
+                        result = await res.json();
+                        alert(result.message);
+                    } else {
+                        alert('Error: respuesta inesperada del servidor.');
+                    }
+                } catch (err) {
+                    alert('Error de red o del servidor.');
+                }
+            });
+            </script>
 
         </section>
 

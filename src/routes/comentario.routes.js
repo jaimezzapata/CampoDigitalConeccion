@@ -7,12 +7,12 @@ import {
 
 const router = express.Router();
 
-//obtener comentarios de la pagina de solicitarnos
+
 router.get('/coment', getComents);
 
-//obtener solo un comentario 
+
 router.get('/coment', getComentsById);
-//insertar comentarios en la base de datos 
+
 router.post('/coment', crearComentario);
 
 

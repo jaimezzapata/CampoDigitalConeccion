@@ -1,26 +1,30 @@
-const express = require('express');
-const cors = require('cors');
-const db = require('./db');  // Importa la conexión a MySQL
+import express from 'express';
+import cors from 'cors';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import contactoRoutes from './src/routes/contacto.routes.js';
 
 const app = express();
 
 app.use(cors());
-app.use(express.json());     // Permite recibir JSON
-app.use(express.static('public'));  // Sirve archivos HTML/JS/CSS de la carpeta public
+app.use(express.json());
 
-// Ruta POST para guardar datos
-app.post('/guardar', (req, res) => {
-  const { nombre, email } = req.body;
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+app.use((req, res, next) => {
+  console.log('Petición recibida:', req.method, req.url);
+  next();
+});
 
-  // Consulta SQL con valores dinámicos
-  const sql = 'INSERT INTO usuarios (nombre, email) VALUES (?, ?)';
-  db.query(sql, [nombre, email], (err, result) => {
-    if (err) {
-      console.error(err);
-      return res.status(500).send('Error al guardar');
-    }
-    res.send('Datos guardados correctamente');
-  });
+app.use(express.static(path.join(__dirname, 'src', 'html')));
+app.use('/css', express.static(path.join(__dirname, 'src', 'css')));
+app.use('/js', express.static(path.join(__dirname, 'src', 'js')));
+app.use('/imagen', express.static(path.join(__dirname, 'src', 'imagen')));
+
+app.use('/api/contacto', contactoRoutes);
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'src', 'html', 'contactanos.html'));
 });
 
 app.listen(3000, () => {

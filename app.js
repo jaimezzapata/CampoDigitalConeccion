@@ -6,14 +6,12 @@ import comentarioRoutes from './src/routes/comentario.routes.js'
 
 const app = express();
 
-// Configuración del puerto
+
 app.set('port', config.port);
 
-// Middleware para permitir JSON en requests
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-// Rutas con prefijo (buenas prácticas)
 app.use(productRoutes);
 app.use(usuarioRoutes);
 app.use(comentarioRoutes);
